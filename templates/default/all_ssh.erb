@@ -1,0 +1,1 @@
+-A FWR -p tcp -m tcp --dport <%= node['base_server'] && node['base_server']['ssh_port'] || 22 %> -m conntrack --ctstate NEW -j ACCEPT
