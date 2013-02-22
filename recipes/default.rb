@@ -8,7 +8,9 @@
 #
 require_recipe 'iptables'
 
-package 'iptables-services'
+if platform?('fedora')
+	package 'iptables-services'
+end
 
 template '/etc/iptables.d/all_ssh' do
   source 'all_ssh.erb'
