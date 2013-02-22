@@ -15,5 +15,5 @@ template '/etc/iptables.d/all_ssh' do
   owner 'root'
   group 'root'
   mode 00644
-  notifies :run, resources(execute: 'rebuild-iptables')
+  notifies :run, resources(:execute => 'rebuild-iptables')
 end
