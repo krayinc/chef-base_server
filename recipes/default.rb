@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-require_recipe 'iptables'
+include_recipe 'iptables'
 
 if platform?('fedora')
 	package 'iptables-services'
