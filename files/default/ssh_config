@@ -1,0 +1,4 @@
+CheckHostIP no
+LogLevel ERROR
+StrictHostKeyChecking no
+UserKnownHostsFile /dev/null
